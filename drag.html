@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/drag.css">
+	<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+	<title></title>
+</head>
+<body>
+<div class="drop">
+  <div class="drop_container" id="drop-items">
+    <div class="drop_card">
+      <div class="drop_data">
+        <img src="image/akshaypsp.jpeg" alt="img1" class="drop_img">
+
+        <div>
+          <h1 class="drop_name">Akshay</h1>
+          <span class="drop_profession">Web developer</span>
+        </div>
+      </div>
+
+      <div>
+        <a href="#" class="drop_social"><i class='bx bxl-instagram'></i></a>
+        <a href="#" class="drop_social"><i class='bx bxl-facebook'></i></a>
+        <a href="#" class="drop_social"><i class='bx bxl-twitter'></i></a>
+      </div>
+    </div>
+
+    <div class="drop_card">
+      <div class="drop_data">
+        <img src="image/sanjay.jpg" alt="img1" class="drop_img">
+
+        <div>
+          <h1 class="drop_name">Sanjay</h1>
+          <span class="drop_profession">Web designer</span>
+        </div>
+      </div>
+
+      <div>
+        <a href="#" class="drop_social"><i class='bx bxl-instagram'></i></a>
+        <a href="#" class="drop_social"><i class='bx bxl-facebook'></i></a>
+        <a href="#" class="drop_social"><i class='bx bxl-twitter'></i></a>
+      </div>
+    </div>
+
+    <div class="drop_card">
+      <div class="drop_data">
+        <img src="image/pawan.jpeg" alt="img1" class="drop_img">
+
+        <div>
+          <h1 class="drop_name">Pawan</h1>
+          <span class="drop_profession">Video Editor</span>
+        </div>
+      </div>
+
+      <div>
+        <a href="#" class="drop_social"><i class='bx bxl-instagram'></i></a>
+        <a href="#" class="drop_social"><i class='bx bxl-facebook'></i></a>
+        <a href="#" class="drop_social"><i class='bx bxl-twitter'></i></a>
+      </div>
+    </div>
+
+    <div class="drop_card">
+      <div class="drop_data">
+        <img src="image/kartar.jpg" alt="img1" class="drop_img">
+
+        <div>
+          <h1 class="drop_name">Kartar</h1>
+          <span class="drop_profession">ui/ux designer</span>
+        </div>
+      </div>
+
+    <!--   <div>
+        <a href="#" class="drop_social"><i class='bx bxl-instagram'></i></a>
+        <a href="#" class="drop_social"><i class='bx bxl-facebook'></i></a>
+        <a href="#" class="drop_social"><i class='bx bxl-twitter'></i></a>
+      </div> -->
+    </div>
+  </div>
+</div>
+<script>
+	/*===== DRAG and DROP =====*/
+const dropItems = document.getElementById('drop-items')
+
+new Sortable(dropItems, {
+    animation: 350,
+    chosenClass: "sortable-chosen",
+    dragClass: "sortable-drag"
+});
+</script>
+</body>
+</html>
